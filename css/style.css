@@ -1,0 +1,179 @@
+/* @import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900"); */
+:root {
+    --purple-color: #800080b7;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+.navbar {
+    background-color: #eee;
+    border-radius: 20px;
+    position: fixed;
+    top: 0;
+    padding: 5px;
+    z-index: 1030;
+    
+}
+
+.navbar img {
+    cursor: pointer;
+}
+
+.navbar .active {
+    color: var(--purple-color);
+    border-radius: 10px;
+}
+
+.navbar .nav-item {
+    margin-right: 10px;
+}
+
+.navbar li:not(active):hover a {
+    color: red;
+}
+
+/* Home */
+.home {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url(../images/banner-bg.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.about {
+    background-color: #eee;
+}
+
+.about .container .row {
+    position: relative;
+    transform: translateY(-100px);
+}
+
+.about .container .row .box {
+    border-radius: 20px;
+}
+
+.about .container .box img {
+    background-color: var(--purple-color);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+/* Work-process */
+.work-process {
+    background-image: url(../images/work-process-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.work-process .container-fluid {
+    height: 100%;
+}
+
+.work-process .container-fluid .row .box {
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(219, 226, 219);
+}
+
+/* Testimonials */
+.testimonials {
+    background-color: #eee;
+}
+
+.testimonials .container {
+    height: 100%;
+}
+
+.testimonials .container .box,
+.testimonials .container .box .second-box {
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(219, 226, 219);
+}
+
+/* Pricing-tables */
+.pricing-tables {
+    background-color: #fff;
+}
+
+.pricing-tables .container {
+    height: 100%;
+
+}
+
+.pricing-tables .container .box {
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(219, 226, 219);
+}
+
+.pricing-tables .container .box .content {
+    background-color: #015353;
+    border-radius: 5px;
+    color: white;
+    /* font-size: 20px; */
+    margin-bottom: 5px;
+}
+
+.fun-facts {
+    background-image: url(../images/fun-facts-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Blog-entries */
+.blog-entries {
+    background-color: #fff;
+}
+
+.blog-entries .container .box {
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(219, 226, 219);
+}
+
+/* Talk-to-us */
+.talk-to-us {
+    background-color: #eee;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--purple-color);
+}
+
+.footer .container .icons a {
+    color: white;
+}
+
+.footer .container .copyright span {
+    font-style: italic;
+    /* font-size: 25px; */
+    color: black;
+}
+
+
+/* Media */
+@media (max-width:767px) {
+    .navbar{
+        width: 85%;
+        margin:0 5px;
+    }
+    .fun-facts {
+        font-size: 5px;
+    }
+
+    .pricing-tables div,
+    .pricing-tables button,
+    .properties {
+        font-size: 10px;
+    }
+}
